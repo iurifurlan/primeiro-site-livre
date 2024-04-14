@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie seu Relato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2> Envie o seu relato </h2>
+
+        <label> <h3> Qual a sua contribuição </h3> </label> 
+        <p></p>
+        <label>
+            <input type="radio" name="tipo" value="Denúncia">Denúncia
+        </label>
+        <label>
+            <input type="radio" name="tipo" value="Reclamação">Reclamação
+        </label>
+        <label>
+            <input type="radio" name="tipo" value="Elogio">Elogio
+        </label>
+        <label>
+            <input type="radio" name="tipo" value="Sugestão"> Sugestão
+        </label>
+        <p></p>
+        <p></p>
+        <label> <strong> Categoria </strong> </label>
+        <select name="categoria" id="categoria">
+            <option value="Alimentação"> Alimentação </option>            
+            <option value="Assistência Social"> Assistência Social</option>
+            <option value="Causa Animal"> Causa Animal </option>            
+            <option value="Conselho Tutelar"> Conselho Tutelar </option>
+            <option value="Educação"> Educação </option>            
+            <option value="Entretenimento e Cultura"> Entretenimento e Cultura </option>
+            <option value="Esporte e Lazer"> Esporte e Lazer </option>            
+            <option value="Infra Estrutura"> Infra Estrutura </option>
+            <option value="Meio Ambiente"> Meio Ambiente </option>            
+            <option value="Saúde"> Saúde </option>
+            <option value="Segurança"> Segurança </option>            
+            <option value="Vigilância Sanitária"> Vigilância Sanitário </option>
+        </select>
+        <p></p>
+        <p></p>
+        <legend><h3> Local / Estabelecimento </h3></legend>
+        <label> Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Praça Bento XVI" required> <br /><br />    
+        <label>Logradouro:</label>
+            <input type="text" name="endereco" id="endereco" placeholder= "Rua Chile" required />
+        <label>Numero:</label>
+            <input type="number" name="numero" id="numero" placeholder= "180" required /><br /><br />
+        <label>Complemento:</label>
+            <input type="text" name="complemento" id="complemento" placeholder= "Apto 12" required />
+        <label> Ponto de Referência </label> 
+            <input type="text" name="referencia" id="referencia" placeholder="Esquina com rua Alberto Faria" required /> <br /><br />          
+        <label>Cidade:</label>
+            <input type="text" name="cidade" id="cidade" placeholder= "Ribeirão Preto" required /> 
+        <label>Estado:</label>
+            <input type="text" name="estado" id="estado" placeholder= "São Paulo" required /> <br /><br />
+        <p></p>
+        <legend><h3> Envie seu Arquivo </h3></legend> 
+        <label> Foto </label>   
+            <input type="file" name="foto" id="foto" required>
+            <input type="submit" name="Enviar" value="Enviar"/>
+            <input type="reset" name="Cancelar" value="Cancelar"/><br /><br />
+        <label> Video </label>    
+            <input type="file" name="video" id="video" required>
+            <input type="submit" name="Enviar" value="Enviar"/>
+            <input type="reset" name="Limpar" value="Cancelar"/><br /><br />
+        <p></p>
+        <label> Descrição </label>            
+        <textarea cols="80" rows="10" name="descricao" id="descricao" maxlength="200" placeholder="Digite aqui....."></textarea>
+        <input type="reset" name="Cancelar" value="Limpar" />
+        <input type="submit" name="Enviar" value="Enviar" />
+        <p></p>
+        <input type="submit" name="Enviar" value="FINALIZAR E ENVIAR" />
+
+        <p></p>        
+        <a href="index.html"><button> Retornar a Página Inicial </button></a>
+
+   
+</body>
+</html>
